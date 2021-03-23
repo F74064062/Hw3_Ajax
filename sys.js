@@ -1,9 +1,11 @@
 $(document).ready(function() {
-    $('#listall button[type="submit"]').click((event) => {
+    $('#listall button').click((event) => {
       event.preventDefault()
-      $.getJSON("students.json", function(data) {
-        updateListDiv(data);
-    });
-      // Step 11 code goes here
-    })
+      $.getJSON("./students", function(data) {
+        $("#list_all").empty();
+        $.each(data, function(key, value){
+          $("#list_all").append('${key}: ${value} <br>')
+        })
+      });
+    })  
   });
