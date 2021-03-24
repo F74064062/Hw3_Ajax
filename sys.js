@@ -1,5 +1,6 @@
 $(document).ready(function() {
-    $('#listall button').click((event) => {
+    
+  $('#listall button').click((event) => {
       event.preventDefault()
       $.getJSON("./students.json", function(data) {
         $("#list_all").empty();
@@ -8,7 +9,16 @@ $(document).ready(function() {
         })
       });
     })
-    
+
+  $('search button').click((event) =>{
+    event.preventDefault()
+    $.get('./hello', {
+      ID: $('#search[name=student_ID').val(),
+    }, (data) => {
+      $('student_search').html(data)
+    })
+  })
+
     
     
   });
