@@ -6,39 +6,33 @@
 </head>
 
 <body> <!-- content goes here-->
-  <form id="listall">
-    <button type="submit">list all students</button>
-  </form>
+    <button id ="list_btn">list all students</button>
   <div id="list_all"></div>
   
   <br>
   <br>
   <br>
-  <form id="search">
-    <label for="fname">student ID:</label><input type="text" name="student_ID" />
-    <br>
-    <button type="submit">search specific student</button>
-  </form>
+  <label for="fname">student ID:</label><input type="text" name="student_ID" />
+  <br>
+  <button id = "search_btn">search specific student</button>
+
   <div id="student_search"></div>
   <br>
   <br>
   <br>
 
-  <form id="add">
-    <label for="fname">student ID:</label><input type="text" name="student_ID" />
-    <br>
-    <label for ="fname">student name:</label><input type="text" name="student_name" />
-    <br>
-    <button type="submit">add new student</button>
-  </form>
+  <label for="fname">student ID:</label><input type="text" name="student_ID" />
   <br>
+  <label for ="fname">student name:</label><input type="text" name="student_name" />
   <br>
-  <br>
-  <form id="delete">
-    <label for="fname">student ID:</label><input type="text" name="student_ID" />
-    <br>
-    <button type="submit">delete specific student</button>
-  </form>
+  <button id = "add">add new student</button>
 
+  <br>
+  <br>
+  <br>
+  
+  <label for="fname">student ID:</label><input type="text" name="student_ID" />
+  <br>
+  <button id = "delete_btn">delete specific student</button>
   <script src="./sys.js"></script>
 </body>
