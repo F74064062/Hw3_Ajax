@@ -6,33 +6,41 @@
 </head>
 
 <body> <!-- content goes here-->
-    <button id ="list_btn">list all students</button>
-  <div id="list_all"></div>
+<form id = "list">
+<button type ="submit">list all students</button>
+<div id="list_all"></div>
+</form>
+<br>
+<br>
+<br>
+<form id = "search">
+<label for="fname">student ID:</label><input type="text" name="student_ID"/>
+<br>
+<button type ="submit">search specific student</button>
+
+<div id="student_search"></div>
+</form>
   
-  <br>
-  <br>
-  <br>
-  <label for="fname">student ID:</label><input type="text" name="student_ID" />
-  <br>
-  <button id = "search_btn">search specific student</button>
+<br>
+<br>
+<br>
+<form id = "add">
+<label for="fname">student ID:</label><input type="text" name="student_ID1"  id ="student_ID1"/>
+<br>
+<label for ="fname">student name:</label><input type="text" name="student_name" id ="student_name" />
+<br>
+<button type ="submit">add new student</button>
+</form>
+<br>
+<br>
+<br>
 
-  <div id="student_search"></div>
-  <br>
-  <br>
-  <br>
+<form id = "delete">
+<label for="fname">student ID:</label><input type="text" name="student_ID" />
+<br>
+<button type ="submit">delete specific student</button>
+</form>
 
-  <label for="fname">student ID:</label><input type="text" name="student_ID" />
-  <br>
-  <label for ="fname">student name:</label><input type="text" name="student_name" />
-  <br>
-  <button id = "add">add new student</button>
 
-  <br>
-  <br>
-  <br>
-  
-  <label for="fname">student ID:</label><input type="text" name="student_ID" />
-  <br>
-  <button id = "delete_btn">delete specific student</button>
-  <script src="./sys.js"></script>
+<script src="./sys.js"></script>
 </body>
